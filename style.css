@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: #08A4A7;
+    display: flex;
+    z-index: 10;
+}
+
+nav>h3{
+    color: #fff;
+    padding: 1.5% 5%;
+    letter-spacing: 2px;
+}
+
+#links{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 35%;
+}
+
+a{
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a:hover{
+    color: #042f30;
+}
+
+#home{
+    height: 90%;
+    width: 100%;
+}
+
+#home>h1{
+    font-size:50px;
+    font-weight: 450;
+    padding-top: 12%;
+    margin-left: 10%;
+}
+
+#txt1{
+    font-size: 30px;
+    font-weight: 430;
+    margin-left: 10%;
+}
+
+#txt2{
+    font-size: 18px;
+    font-weight: 430;
+    margin-left: 10%;
+    padding-top: 10px;
+}
+
+#pic{
+    height: 280px;
+    width: 280px;
+    background-image: url(neelesh.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 32%;
+    right: 15%;
+    animation: picAnim 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#about{
+    height: 100%;
+    width: 100%;
+    background-color:  #0c7274;
+    text-align: center;
+}
+
+#about>h1{
+    color: #fff;
+    font-weight: 400;
+    padding-top: 2%;
+}
+
+#container>img{
+    position: relative;
+    top: 25%;
+    left: 8%;
+}
+
+#container{
+    position: relative;
+    width: 100%;
+    height: 88%;
+    display: flex;
+}
+
+#text{
+    height: 60%;
+    width: 30%;
+    position: relative;
+    top: 28%;
+    left: 20%;
+}
+
+#text>p{
+    color: #fff;
+    font-weight: 300;
+}
+
+#skills{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#skills>h1{
+    font-weight: 400;
+    padding-top: 2%;
+}
+
+#logos{
+    height: 300px;
+    width: 80%;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logos>img{
+    transition: 1s;
+}
+#logos>img:hover{
+    cursor: pointer;
+    transform: rotateY(360deg);
+}
+
+#contact{
+    height: 35%;
+    width: 100%;
+    background-color: #074a4b;
+    text-align: center;
+}
+
+#contact>h1{
+    color: #fff;
+    font-weight: 400;
+    padding-top: 2%;
+}
+
+#contact>h4{
+    position: relative;
+    color: rgba(255, 255, 255, 0.397);
+    font-weight: 350;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes picAnim{
+    from{
+        transform: translateX(50%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
